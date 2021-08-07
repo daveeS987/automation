@@ -6,7 +6,7 @@ Practice automation by grabbing phone numbers and emails from a text document.
 
 ## Links & Resources
 
-- [Pull Request]()
+- [Pull Request](https://github.com/daveeS987/automation/pull/1)
 
 ### Collaborators
 
