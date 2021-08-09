@@ -33,9 +33,11 @@ def pull_email_info(data):
 
 
 def write_to_file(data, path):
+    result = ""
+    for item in data:
+        result += item + "\n"
     with open(path, "w") as new_file:
-        for item in data:
-            new_file.write(item + "\n")
+        new_file.write(result)
 
 
 def main():
