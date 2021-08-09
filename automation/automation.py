@@ -19,6 +19,7 @@ def pull_phone_info(data):
             number = number[:3] + "-" + number[3:6] + "-" + number[6:]
         phone_numbers.append(number)
 
+    phone_numbers = list(set(phone_numbers))
     phone_numbers.sort()
     return phone_numbers
 
@@ -26,6 +27,7 @@ def pull_phone_info(data):
 def pull_email_info(data):
     email_pattern = r"\S+@\S+"
     emails = re.findall(email_pattern, data)
+    emails = list(set(emails))
     emails.sort()
     return emails
 
