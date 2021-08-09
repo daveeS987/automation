@@ -36,9 +36,13 @@ def write_to_file(data, path):
             new_file.write(item + "\n")
 
 
-if __name__ == "__main__":
+def main():
     data = get_data("assets/potential-contacts.txt")
     phone_numbers = pull_phone_info(data)
     emails = pull_email_info(data)
     write_to_file(emails, "assets/emails.txt")
     write_to_file(phone_numbers, "assets/phone_numbers.txt")
+
+
+if __name__ == "__main__":
+    main()
